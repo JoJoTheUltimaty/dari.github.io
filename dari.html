@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me perdonas? Te amo </title>
+    <style >
+    .body { 
+     background-color: aquamarine;
+     text-align: center;
+     }
+    .body__title { 
+     color:cornflowerblue   
+     }
+     .body__img { width: 40%;
+                   }
+    </style>
+
+   
+</head>
+  <body class="body">
+ <h1 class="body__title" > ¿Me perdonas por dormirme, baby? :c  </h1>   
+ <img src="https://static.wikia.nocookie.net/doblaje/images/2/23/Cinnamoroll.png/revision/latest?cb=20230927030406&path-prefix=es   " 
+ alt="soy yo" class= "body__img" />
+ <button id="yes"> Shi, mwak  </button> 
+ <button id="no"> Nu, chau </button>
+
+ <script> 
+  const vutonsi = document.getElementById('yes'); 
+  const vutonNo = document.getElementById('no');
+
+
+  const teaamomucho  = () => { 
+    alert('te amo, no volvere a quedarme tan tarde <3');
+    alert('nos casamos manana:3')
+    location.href = 'https://youtu.be/Vdt8d1zkeXY?si=rHy1VESkO64iEjHA&t=23' ;
+   } ;  
+  
+   const nopunu = () => {  
+    vutonNo.style.position = 'absolute';
+    vutonNo.style.top = (Math.random () * window.innerHeight) + 'px';
+    vutonNo.style.left = (Math.random () * window.innerWidth) + 'px';
+    } ;
+
+    vutonsi.addEventListener('click', teaamomucho);
+    vutonNo.addEventListener('mouseover', nopunu );
+ </script>
+</body>
+
+</html>
